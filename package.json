@@ -1,0 +1,34 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --env dev",
+    "build": "webpack --env build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "css-loader": "^3.4.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.19.1",
+    "prettier-webpack-plugin": "^1.2.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

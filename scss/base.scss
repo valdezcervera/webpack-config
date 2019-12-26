@@ -1,0 +1,50 @@
+$primary-color: green;
+$column6: 70px repeat(4, 1fr) 70px;
+$row10: repeat(10, 1fr);
+@mixin define-color($name, $value) {
+  .--bg-color-#{$name} {
+    background-color: $value;
+  }
+}
+
+@include define-color("red", red);
+@include define-color("hotpink", hotpink);
+@include define-color("purple", purple);
+
+body {
+	background-color: $primary-color;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: $column6;
+  grid-template-rows: $row10;
+  width: 1280px;
+  height: 1024px;
+}
+
+.title {
+  font-size: 60px;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: center;
+  margin: 0;
+}
+
+.article {
+  display: grid;
+  height: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;  
+}
+
+.header {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
